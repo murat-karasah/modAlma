@@ -60,6 +60,7 @@ namespace modAlma
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "0";
             // 
             // richTextBox1
             // 
@@ -80,6 +81,7 @@ namespace modAlma
             this.Controls.Add(this.Sayı);
             this.Controls.Add(this.Hesapla);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mod Alma";
             this.ResumeLayout(false);
             this.PerformLayout();
