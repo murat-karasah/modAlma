@@ -12,7 +12,7 @@ namespace modAlma
 {
     public partial class Form1 : Form
     {
-        public int sayi = 0, sonuc, y = 1;
+        public int sayi = 0, sonuc;
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +29,7 @@ namespace modAlma
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int y = 0;
             sayi = Convert.ToInt32(textBox1.Text);
 
             richTextBox1.Clear();
