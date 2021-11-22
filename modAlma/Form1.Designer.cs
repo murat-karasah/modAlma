@@ -61,6 +61,7 @@ namespace modAlma
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "0";
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // richTextBox1
             // 

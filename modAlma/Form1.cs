@@ -12,10 +12,19 @@ namespace modAlma
 {
     public partial class Form1 : Form
     {
-        public  int sayi=0,sonuc;
+        public int sayi = 0, sonuc, y = 1;
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(this, new EventArgs());
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -36,8 +45,11 @@ namespace modAlma
             {
                 if (sayi % i == 0)
                 {
-                    richTextBox1.AppendText(i + "\n");
+                        y++;
+
+                        richTextBox1.AppendText(y+"." +i + "\n");
                 }
+                    textBox1.Text = "0";
             }
             }
         }
